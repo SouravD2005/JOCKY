@@ -1,0 +1,39 @@
+{
+  "name": "i",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:api\" \"npm:web\"",
+    "web": "vite",
+    "api": "tsx server/index.ts",
+    "seed:local": "tsx server/seed.ts",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "@fastify/jwt": "^10.2.2",
+    "@fastify/static": "^10.1.4",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "fastify": "^5.12.5",
+    "lucide-react": "^1.48.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  }
+}
